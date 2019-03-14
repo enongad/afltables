@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552563940679.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2E7DB54D",
+    "lastKnownWriteTime" : 1552564400,
+    "last_content_update" : 1552564400842,
+    "path" : "~/Documents/Analytics/afltables/R/get_team_year_tables.R",
+    "project_path" : "R/get_team_year_tables.R",
+    "properties" : {
+        "cursorPosition" : "0,13",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

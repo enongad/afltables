@@ -1,0 +1,12 @@
+library(afltables)
+
+
+for(year in 2017:2018){
+  
+  for(team in teams){
+    
+    get_team_year_tables(team, year)
+    
+  }
+  
+}
