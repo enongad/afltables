@@ -14,7 +14,9 @@ get_all_team_stats <- function(webpage){
 
   }
 
-  combined = combined[as.character(combined$round) != "Tot",]
+  combined = combined[!as.character(combined$round) %in% c("Tot","Totals"),]
+  combined = combined[!as.character(combined$Player) %in% c("Tot","Totals"),]
+
   combined[is.na(combined)] <- 0
 
   return(combined)

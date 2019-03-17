@@ -1,12 +1,12 @@
 Package: afltables
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Library of Webscraping Tools to Retrieve Statistics from afltables.com
 Version: 0.1.0
 Author: Fabian D'Agnone
 Maintainer: <fabiandagnone@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This library holds a collections of tools that webscrape afl data from afltables.com. Presently the packages pulls only player data.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 Depends: dplyr, RCurl, rvest, reshape2
+RoxygenNote: 6.1.1
