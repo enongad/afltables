@@ -1,5 +1,5 @@
 
-get_game_statistics <- function(statistic, webpage, team){
+get_game_statistics <- function(statistic, webpage){
 
   s = which(player_statistics == statistic)
 
@@ -12,7 +12,6 @@ get_game_statistics <- function(statistic, webpage, team){
 
   stat_table = raw_stat_table[2:n,]
   names(stat_table) = raw_stat_table[1,]
-  # stat_table = stat_table[!is.na(stat_table)]
 
   long_stats <- melt(stat_table,id="Player")
   long_stats$value = suppressWarnings(as.numeric(long_stats$value))
@@ -20,14 +19,6 @@ get_game_statistics <- function(statistic, webpage, team){
 
   colnames(long_stats)[2:3] <- c("round",statistic)
 
-  if(!exists(team)){
-    assign(team, long_stats)
-    } else {
-    assign(team,merge(x=get(team),y=long_stats,by=c("Player","round"),all.x = T))
-
-      }
-
-  assign(team, `[[<-`(get(team), 'team', value = team))
-
-  return(get(team))
+  return(long_stats)
 }
+

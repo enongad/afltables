@@ -8,5 +8,8 @@ team_season <- function(team, season){
 
   season_stats = get_all_team_stats(webpage)
 
+  season_stats$season = season
+  season_stats$team = team
+
   return(season_stats)
 }
