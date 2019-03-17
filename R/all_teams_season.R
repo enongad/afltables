@@ -1,4 +1,7 @@
-
+#' Return all teams player statistics for a season
+#'
+#' @param season A number. 2013 - 2018
+#' @return A dataframe, all player game statistics, all teams
 
 all_teams_season <- function(season){
 

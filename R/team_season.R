@@ -1,14 +1,8 @@
-#' Add together two numbers.
+#' Retrieve team player statistics for a particular season
 #'
-#' @param x A number.
-#' @param y A number.
-#' @return The sum of \code{x} and \code{y}.
-#' @examples
-#' add(1, 1)
-#' add(10, 1)
-add <- function(x, y) {
-  x + y
-}
+#' @param team A number.
+#' @param season A number. 2013 - 2018
+#' @return A dataframe, all player game statistics
 
 team_season <- function(team, season){
 
